@@ -1,0 +1,9 @@
+streamlit
+pandas
+openpyxl
+matplotlib
+scikit-learn
+requests
+beautifulsoup4
+textblob
+google-genai
