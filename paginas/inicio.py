@@ -92,7 +92,7 @@ def mostrar_inicio():
 
     st.divider()
 
-    st.markdown('<div class="section-title">🎥 Demo de Data Storytelling</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">Data Storytelling</div>', unsafe_allow_html=True)
 
     st.write(
         """
@@ -101,13 +101,13 @@ def mostrar_inicio():
         """
     )
 
-    video_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    video_url = "https://youtu.be/9zDSwc7pZac"
 
     st.video(video_url)
 
     st.divider()
 
-    st.markdown('<div class="section-title">🧭 Navegación del portafolio</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">Navegación del portafolio</div>', unsafe_allow_html=True)
 
     st.write(
         """
@@ -121,7 +121,7 @@ def mostrar_inicio():
     with col1:
         st.markdown(
             """
-            **📊 Tarea 1**
+            **Tarea 1**
 
             - Análisis Exploratorio  
             - Aprendizaje Automático  
@@ -132,7 +132,7 @@ def mostrar_inicio():
     with col2:
         st.markdown(
             """
-            **📁 Tarea 2**
+            **Tarea 2**
 
             - Carga de Archivos  
             - Scraping  
@@ -143,7 +143,7 @@ def mostrar_inicio():
     with col3:
         st.markdown(
             """
-            **🧠 Complemento**
+            **Complemento**
 
             - Prompts de IA  
             - Consulta inteligente del dataset  
@@ -153,10 +153,7 @@ def mostrar_inicio():
 
     st.divider()
 
-    # ==========================
-    # INFORMACIÓN ORIGINAL DEL PROYECTO
-    # ==========================
-    st.title("🎮 Proyecto de Ciencia de Datos")
+    st.title("Proyecto de Ciencia de Datos")
     st.subheader("Análisis de los videojuegos más vendidos")
 
     st.write(
@@ -175,7 +172,7 @@ def mostrar_inicio():
     try:
         df = cargar_dataset()
 
-        st.subheader("📌 Información general del dataset")
+        st.subheader("Información general del dataset")
 
         col1, col2, col3 = st.columns(3)
 
@@ -203,7 +200,7 @@ def mostrar_inicio():
 
     st.divider()
 
-    st.subheader("📚 Secciones de la aplicación")
+    st.subheader("Secciones de la aplicación")
 
     st.write(
         """

@@ -14,7 +14,7 @@ def cargar_dataset():
 
 
 def mostrar_exploratorio():
-    st.title("📊 Análisis Exploratorio de Datos")
+    st.title("Análisis Exploratorio de Datos")
     st.write(
         """
         En esta sección se realiza un análisis exploratorio del dataset de videojuegos más vendidos.
@@ -43,7 +43,7 @@ def mostrar_exploratorio():
     )
 
     if submenu == "Descripción del dataset":
-        st.header("📌 Descripción del dataset")
+        st.header("Descripción del dataset")
 
         st.write(
             """
@@ -73,7 +73,7 @@ def mostrar_exploratorio():
         st.dataframe(tipos, use_container_width=True)
 
     elif submenu == "Descripción de los campos":
-        st.header("🧾 Descripción de los campos")
+        st.header("Descripción de los campos")
 
         descripciones = {
             "Rank": "Posición del videojuego dentro del ranking de ventas.",
@@ -117,7 +117,7 @@ def mostrar_exploratorio():
             st.dataframe(frecuencia, use_container_width=True)
 
     elif submenu == "Navegador del dataset completo":
-        st.header("🧭 Navegador del dataset completo")
+        st.header("Navegador del dataset completo")
 
         st.write("En esta sección se puede visualizar el dataset completo de forma interactiva.")
 
@@ -134,7 +134,7 @@ def mostrar_exploratorio():
         st.dataframe(df, use_container_width=True)
 
     elif submenu == "Buscador de registros":
-        st.header("🔎 Buscador de registros")
+        st.header("Buscador de registros")
 
         st.write(
             """
@@ -163,7 +163,7 @@ def mostrar_exploratorio():
             st.info("Escriba un texto para buscar dentro del dataset.")
 
     elif submenu == "Graficador exploratorio":
-        st.header("📈 Graficador exploratorio")
+        st.header("Graficador exploratorio")
 
         st.write(
             """
@@ -210,7 +210,7 @@ def mostrar_exploratorio():
             )
 
     elif submenu == "Hipótesis":
-        st.header("🧪 Hipótesis del análisis")
+        st.header("Hipótesis del análisis")
 
         hipotesis = st.selectbox(
             "Seleccione una hipótesis:",

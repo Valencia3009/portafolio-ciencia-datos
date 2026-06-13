@@ -19,7 +19,7 @@ def cargar_dataset():
 
 
 def mostrar_aprendizaje():
-    st.title("🤖 Aprendizaje Automático")
+    st.title("Aprendizaje Automático")
     st.write(
         """
         En esta sección se aplican algoritmos de aprendizaje automático para analizar
@@ -36,7 +36,7 @@ def mostrar_aprendizaje():
 
     st.divider()
 
-    st.subheader("⚙️ Configuración del modelo")
+    st.subheader("Configuración del modelo")
 
     variables_numericas = df.select_dtypes(include=["int64", "float64"]).columns.tolist()
 
@@ -109,7 +109,7 @@ def mostrar_aprendizaje():
     mse = mean_squared_error(y_test, predicciones)
     r2 = r2_score(y_test, predicciones)
 
-    st.subheader("📊 Resultados del modelo")
+    st.subheader("Resultados del modelo")
 
     col1, col2, col3 = st.columns(3)
     col1.metric("MAE", f"{mae:.2f}")
@@ -128,7 +128,7 @@ def mostrar_aprendizaje():
 
     st.divider()
 
-    st.subheader("📈 Gráfica de entrenamiento y predicción")
+    st.subheader("Gráfica de entrenamiento y predicción")
 
     fig, ax = plt.subplots()
 
@@ -159,7 +159,7 @@ def mostrar_aprendizaje():
 
     st.divider()
 
-    st.subheader("🧾 Tabla comparativa de resultados")
+    st.subheader("Tabla comparativa de resultados")
 
     resultados = X_test.copy()
     resultados["Valor real"] = y_test.values
@@ -170,7 +170,7 @@ def mostrar_aprendizaje():
 
     st.divider()
 
-    st.subheader("✅ Interpretación")
+    st.subheader("Interpretación")
 
     if variable_dependiente == "SalesMillions":
         st.write(

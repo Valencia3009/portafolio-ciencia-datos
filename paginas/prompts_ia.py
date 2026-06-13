@@ -68,7 +68,7 @@ def responder_con_gemini(pregunta, df):
 
 
 def mostrar_prompts_ia():
-    st.title("🧠 Prompts de IA con Gemini")
+    st.title("Prompts de IA con Gemini")
 
     st.write(
         """
@@ -86,7 +86,7 @@ def mostrar_prompts_ia():
 
     st.divider()
 
-    st.subheader("💬 Realiza una pregunta sobre el dataset")
+    st.subheader("Realiza una pregunta sobre el dataset")
 
     pregunta = st.text_area(
         "Escribe tu pregunta:",
@@ -115,7 +115,7 @@ def mostrar_prompts_ia():
 
     st.divider()
 
-    st.subheader("📌 Preguntas que puedes probar")
+    st.subheader("Preguntas que puedes probar")
 
     st.write(
         """
@@ -130,7 +130,7 @@ def mostrar_prompts_ia():
 
     st.divider()
 
-    st.subheader("✅ Conclusión")
+    st.subheader("Conclusión")
 
     st.write(
         """

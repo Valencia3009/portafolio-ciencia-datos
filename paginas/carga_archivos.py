@@ -23,7 +23,7 @@ def leer_archivo(archivo):
 
 
 def mostrar_carga_archivos():
-    st.title("📁 Análisis de Datos por Carga de Archivos")
+    st.title("Análisis de Datos por Carga de Archivos")
 
     st.write(
         """
@@ -60,7 +60,7 @@ def mostrar_carga_archivos():
 
     st.divider()
 
-    st.subheader("📌 Información general del archivo")
+    st.subheader("Información general del archivo")
 
     col1, col2, col3 = st.columns(3)
 
@@ -82,7 +82,7 @@ def mostrar_carga_archivos():
 
     st.divider()
 
-    st.subheader("📊 Generador de gráficos")
+    st.subheader("Generador de gráficos")
 
     columnas = df.columns.tolist()
 
@@ -126,7 +126,7 @@ def mostrar_carga_archivos():
 
     st.divider()
 
-    st.subheader("✅ Conclusión")
+    st.subheader("Conclusión")
 
     st.write(
         """

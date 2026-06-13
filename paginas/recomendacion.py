@@ -32,7 +32,7 @@ def mostrar_recomendacion():
 
     st.divider()
 
-    st.subheader("🎮 Selecciona tus preferencias")
+    st.subheader("Selecciona tus preferencias")
 
     plataformas = sorted(df["Platform"].dropna().unique().tolist())
     series = sorted(df["Series"].dropna().unique().tolist())
@@ -95,7 +95,7 @@ def mostrar_recomendacion():
 
     recomendaciones = recomendaciones.sort_values(by="SalesMillions", ascending=False)
 
-    st.subheader("📌 Resultados de recomendación")
+    st.subheader("Resultados de recomendación")
 
     if recomendaciones.empty:
         st.warning("No se encontraron videojuegos con esos criterios.")

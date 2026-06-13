@@ -47,7 +47,7 @@ def extraer_textos_web(url, tipo_texto):
 
 
 def mostrar_sentimientos():
-    st.title("💬 Análisis de Sentimientos y Scraping")
+    st.title("Análisis de Sentimientos y Scraping")
 
     st.write(
         """
@@ -59,7 +59,7 @@ def mostrar_sentimientos():
 
     st.divider()
 
-    st.subheader("🌐 Extracción de opiniones o textos desde una página web")
+    st.subheader("Extracción de opiniones o textos desde una página web")
 
     url = st.text_input(
         "Ingrese la URL del sitio web:",
@@ -117,7 +117,7 @@ def mostrar_sentimientos():
 
             st.divider()
 
-            st.subheader("📋 Opiniones o textos leídos")
+            st.subheader("Opiniones o textos leídos")
 
             for item in resultados:
                 st.markdown(f"### Texto {item['N°']}")
@@ -126,7 +126,7 @@ def mostrar_sentimientos():
                 st.write(f"**Sentimiento detectado:** {item['Sentimiento']}")
                 st.write("---")
 
-            st.subheader("📊 Resumen del análisis de sentimientos")
+            st.subheader("Resumen del análisis de sentimientos")
 
             positivos = sum(1 for item in resultados if item["Sentimiento"] == "Positivo")
             negativos = sum(1 for item in resultados if item["Sentimiento"] == "Negativo")
@@ -158,7 +158,7 @@ def mostrar_sentimientos():
 
             st.divider()
 
-            st.subheader("✅ Conclusión")
+            st.subheader("Conclusión")
 
             sentimiento_dominante = df_resumen.sort_values(
                 by="Cantidad",
